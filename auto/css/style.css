@@ -1,0 +1,283 @@
+body {
+  background-color: #eaf4ff;
+}
+
+/*fonts*/
+
+h3 {
+  font-size: 16px;
+  color: #5c6b8e;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/*fonts*/
+
+/*components*/
+
+ul > li {
+  padding: 12px 40px 0px 0px;
+}
+
+.nav > li > a {
+  display: inline;
+}
+
+p {
+  font-size: 14px;
+}
+
+.modal-body > h5 {
+  text-align: center;
+}
+
+input, select {
+  border-radius: 4px;
+  border: 1px solid #d6dae3;
+  text-align: center;
+  padding: 4px 0px;
+}
+
+ #h_reg input {
+  padding: 6px 12px;
+  margin-top: 8px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+select {
+  height: 30px;
+  width: 172px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #3a80d2;
+  color: white;
+  padding: 8px 16px;
+}
+
+.li-button {
+  margin-top: 5px;
+}
+
+/* components */
+
+
+.auto, .help {
+  background-color: #f5f9fe;
+}
+
+.settings {
+  background-color: white;
+}
+
+.settings-block {
+  padding: 12px 0px 4px 0px;
+}
+
+.md select {
+  margin-top: 12px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*checkbox*/
+
+.kpp {
+  margin: 38px 0px 34px 0px;
+}
+
+label {
+  border-radius: 4px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 22px;
+	font-size: 14px;
+}
+
+label:before {
+  border-radius: 4px;
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 8px 0px 2px 0px;
+	position: absolute;
+	left: 0;
+  content: " ";
+	bottom: 1px;
+	background-color: #3a80d2;
+}
+
+input[type=checkbox] {
+	display: none;
+  border-radius: 4px;
+}
+
+.checkbox label:before {
+	border-radius: 3px;
+}
+
+input[type=checkbox]:checked + label:before {
+	content: "+";
+	font-size: 14px;
+	color: white;
+	text-align: center;
+  line-height: 15px;
+  font-weight: bold;
+}
+
+/*checkbox*/
+
+.s-button {
+  border: none;
+  padding: 10px 60px;
+  margin: 20px 0px 20px 65px;
+}
+
+/*card*/
+
+.auto > .card {
+  background-color: white;
+  border-radius: 4px;
+  margin: 14px 0px;
+}
+
+.card img {
+  width: 214px;
+  height: 220px;
+}
+
+.card-info li {
+  list-style: none;
+  padding: 0px;
+  color: #b9becb;
+}
+
+.cost {
+  text-align: right;
+}
+
+.gray {
+  font-size: 12px;
+  color: #b9becb;
+}
+
+.c-button {
+  border: none;
+  margin-top: 96px;
+}
+
+button > a {
+  color: white;
+  text-decoration: none;
+}
+
+/*card*/
+
+/*cars*/
+
+.auto-head {
+  background-color: white;
+}
+
+.gr {
+  background-color: #f5f9fe;
+}
+
+.year {
+  font-size: 20px;
+  color: #b9becb;
+}
+
+.dops > li  {
+  padding: 0px;
+}
+
+ul.dops {
+  list-style: none;
+  padding-left: 0px;
+}
+.dops li {
+  padding-left: 1.3em;
+}
+.dops li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #3a80d2;
+  font-size: 12px;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+.a-button {
+  border: none;
+  margin-top: 16px;
+  padding: 8px 46px;
+}
+
+.img-responsive {
+  margin: 40px auto;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.c-h2 {
+  margin-top: 36px;
+}
+
+.m-button {
+  border: none;
+  padding: 8px 52px;
+}
+
+.r-button {
+  border: none;
+  padding: 6px 72px;
+  margin-top: 10px;
+}
+
+.inputfile {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.modal-body input{
+  padding: 8px 48px;
+  margin-top: 12px;
+}
+
+.inputfile + label {
+    font-size: 14px;
+    border: 1px solid #dbdee4;
+    border-style: dashed;
+    color: #3a80d2;
+    display: block;
+    text-align: center;
+    padding: 8px;
+    margin-top: 12px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:before {
+  background-color: white;
+}
+/*cars*/
+
+/*forms*/
+/*forms*/
