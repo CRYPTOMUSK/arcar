@@ -4,6 +4,23 @@ body {
 
 /*fonts*/
 
+@font-face {
+  font-family: RobotoR;
+  src: url(fonts/RobotoR.ttf);
+}
+
+@font-face {
+  font-family: RobotoM;
+  src: url(fonts/RobotoM.ttf);
+}
+
+@font-face {
+  font-family: RobotoL;
+  src: url(fonts/RobotoL.ttf);
+}
+
+/*fonts*/
+
 h3 {
   font-size: 16px;
   color: #5c6b8e;
@@ -11,37 +28,90 @@ h3 {
 
 h2 {
   font-size: 20px;
+  font-family: RobotoM;
 }
-
-/*fonts*/
 
 /*components*/
 
 ul > li {
   padding: 12px 40px 0px 0px;
+  font-family: RobotoR;
 }
 
 .nav > li > a {
   display: inline;
 }
 
+select {
+  text-align: center;
+  text-align-last: center;
+}
+option {
+  text-align: center;
+}
+
 p {
   font-size: 14px;
+  font-family: RobotoL;
+}
+
+
+.settings-block a  {
+  font-family: RobotoL;
 }
 
 .modal-body > h5 {
   text-align: center;
 }
 
-input, select {
+h5 {
+  font-family: RobotoR;
+  font-size: 14px;
+}
+
+input, button, select, textarea {
+  font-family: RobotoR;
+}
+
+.input_sm input {
+  padding: 4px 0px;
+}
+
+.input_sm select {
+  width: 161px;
+}
+
+.input_lg input {
+  padding: 4px 83px;
+}
+
+.table input {
+  background-color: #f5f9fe;
+  border: none;
+  text-align: left;
+  padding: 4px 0px;
+  width: 40px;
+}
+
+input, select, textarea {
   border-radius: 4px;
   border: 1px solid #d6dae3;
   text-align: center;
   padding: 4px 0px;
 }
 
+.settings-block > .tb {
+  background-color: white;
+  color: #3a80d2;
+}
+
+.form-control {
+  width: 80%;
+  margin: 0 auto;
+}
+
  #h_reg input {
-  padding: 6px 12px;
+  padding: 6px 34px;
   margin-top: 8px;
   display: block;
   margin-right: auto;
@@ -53,6 +123,21 @@ select {
   width: 172px;
 }
 
+.notf {
+  font-size: 360px;
+  text-align: center;
+  color: #bdc3c7;
+}
+
+.not_f {
+  width: 360px;
+}
+
+.btn > img {
+  width: 14px;
+}
+
+
 .button {
   border-radius: 4px;
   background-color: #3a80d2;
@@ -60,10 +145,41 @@ select {
   padding: 8px 16px;
 }
 
+.dropdown-menu {
+  position: relative;
+  float: initial;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.ticket_ok {
+  font-size: 12px;
+  font-family: RobotoL;
+}
+
+.dropdown-menu > li {
+  padding: 0px;
+}
+
 .li-button {
   margin-top: 5px;
 }
 
+.edit-button {
+  border-radius: 30px;
+  border: none;
+}
+
+.delete-button {
+  border-radius: 30px;
+  border: none;
+}
+
+.delete-button, .edit-button:active {
+  border: none;
+}
 /* components */
 
 
@@ -153,7 +269,92 @@ input[type=checkbox]:checked + label:before {
 
 .card img {
   width: 214px;
-  height: 220px;
+}
+
+.auto-prev img {
+  width: 380px;
+}
+
+.auto-inf {
+  margin-top: 26px;
+}
+
+.auto-inf li {
+  list-style: none;
+  padding: 2px;
+  font-size: 16px;
+}
+
+.crd {
+  background-color: white;
+  margin-top: 14px;
+  padding-bottom: 12px;
+  border-radius: 2px;
+  box-shadow: 2px 3px 36px -21px rgba(0,0,0,0.52);
+}
+
+.settings-block > .sorting a, .filter a {
+  display: block;
+  text-align: left;
+  width: 60%;
+  margin: 12px auto;
+  font-family: RobotoR;
+}
+
+.filter img {
+  width: 30px;
+  border-radius: 50%;
+    background-color: #3a80d2;
+    width: 30px;
+    padding: 5px;
+}
+
+.settings-block span {
+  font-size: 11px;
+  padding-right: 8px;
+}
+
+input {
+  padding: 4px 34px;
+}
+
+
+.modded textarea {
+  width: 328px;
+  height: 80px;
+  resize: none;
+}
+
+.error {
+  text-align: center;
+  padding: 6px 0px;
+  color: white;
+  background-color: #3a80d2;
+  margin-top: 13px;
+}
+
+.gr-a {
+  background-color: #3a80d2;
+  padding: 8px;
+}
+
+.gr-a a {
+  margin: 15px 0px;
+  border-radius: 5px;
+  padding: 5px;
+  color: white
+}
+
+.modded textarea , .modded input, .modded select {
+  margin-top: 8px;
+}
+
+.settings-block a:hover {
+  text-decoration: none;
+}
+
+.discr {
+  margin-top: 12px;
 }
 
 .card-info li {
@@ -169,6 +370,18 @@ input[type=checkbox]:checked + label:before {
 .gray {
   font-size: 12px;
   color: #b9becb;
+}
+
+.reg-img {
+  width: 60px;
+  background-color: #3a80d2;
+  border-radius: 60px;
+  padding: 8px;
+}
+
+.bgc {
+  background: url(../image/root/bgc.png) no-repeat;
+  padding: 10px;
 }
 
 .c-button {
@@ -192,6 +405,13 @@ button > a {
 .gr {
   background-color: #f5f9fe;
 }
+
+.p-mb {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+}
+
 
 .year {
   font-size: 20px;
@@ -219,14 +439,21 @@ ul.dops {
   width: 1.3em; /* same as padding-left set on li */
 }
 
+.list > img {
+  width: 20px;
+}
+
+.list li {
+
+}
+
 .a-button {
   border: none;
-  margin-top: 16px;
   padding: 8px 46px;
 }
 
 .img-responsive {
-  margin: 40px auto;
+  margin: 14px auto;
 }
 
 .mt {
@@ -242,42 +469,36 @@ ul.dops {
   padding: 8px 52px;
 }
 
-.r-button {
+.r-button, .l-button {
   border: none;
   padding: 6px 72px;
   margin-top: 10px;
 }
 
-.inputfile {
-  width: 0px;
-  height: 0px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
+.l-button {
+  padding: 6px 93px;
 }
 
-.modal-body input{
+.log-error {
+  margin: 12px 30px;
+  background-color: rgba(210, 58, 58, 0.2);
+  padding: 6px 0px;
+  border-radius: 4px;
+  font-family: RobotoL;
+  font-size: 16px;
+}
+
+.modal-body input {
   padding: 8px 48px;
   margin-top: 12px;
 }
 
-.inputfile + label {
-    font-size: 14px;
-    border: 1px solid #dbdee4;
-    border-style: dashed;
-    color: #3a80d2;
-    display: block;
-    text-align: center;
-    padding: 8px;
-    margin-top: 12px;
-}
-
-.inputfile:focus + label,
-.inputfile + label:before {
+input[type="file"] {
   background-color: white;
+  border: 1px solid #3a80d2;
+  border-style: dashed;
 }
-/*cars*/
 
-/*forms*/
-/*forms*/
+.acceptFile {
+  width: 328px;
+}
